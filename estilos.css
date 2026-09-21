@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    background-color: #f5f7fb;
+    color: #15243d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* NAVBAR */
+
+.movie-navbar {
+    background-color: #0d213b;
+}
+
+.movie-navbar .navbar-brand {
+    font-size: 21px;
+}
+
+.movie-navbar .navbar-brand span {
+    color: #4d8fff;
+}
+
+.movie-navbar .nav-link {
+    color: white;
+    margin-left: 15px;
+}
+
+.movie-navbar .nav-link:hover,
+.movie-navbar .nav-link.active {
+    color: #4d8fff;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 390px;
+
+    background:
+        linear-gradient(
+            rgba(5, 18, 35, 0.88),
+            rgba(5, 18, 35, 0.70)
+        ),
+        url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+.hero h1 {
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+}
+
+
+.hero h1 span {
+    color: #4d8fff;
+}
+
+
+.hero p {
+    color: #dbe5f2;
+    font-size: 18px;
+}
+
+
+.search-box {
+    background-color: white;
+
+    border-radius: 40px;
+
+    padding: 5px;
+
+    display: flex;
+
+    max-width: 650px;
+
+    margin-top: 30px;
+}
+
+
+.search-box input {
+    border: none;
+
+    outline: none;
+
+    flex: 1;
+
+    padding: 14px 20px;
+
+    border-radius: 30px;
+}
+
+
+.search-box button {
+    border-radius: 30px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* CARDS */
+
+.movie-card {
+    border: none;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    height: 100%;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.2s;
+}
+
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.movie-card img {
+    height: 310px;
+
+    object-fit: cover;
+}
+
+
+.movie-card .card-body {
+    padding: 15px;
+}
+
+
+.movie-card h5 {
+    font-weight: bold;
+}
+
+
+.movie-card p {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* FOOTER */
+
+.movie-footer {
+    background-color: #0d213b;
+
+    color: white;
+
+    padding: 25px 0;
+
+    margin-top: 40px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .search-box {
+        flex-direction: column;
+
+        background: transparent;
+    }
+
+    .search-box input {
+        margin-bottom: 10px;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+}
